@@ -13,10 +13,10 @@ public class Element extends Rectangle {
 	public int getValue() {
 		return this.value;
 	}
-	  public TranslateTransition moveX(int x) {
-		    TranslateTransition t = new TranslateTransition(Duration.millis(100), this);
+	public TranslateTransition moveX(int x) {
+		    TranslateTransition t = new TranslateTransition(Duration.millis(400), this);
 		    t.setByX(x);
 		    return t; 
-	  }
+	}
 
 }

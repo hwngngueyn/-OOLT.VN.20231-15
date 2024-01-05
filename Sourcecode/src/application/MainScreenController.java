@@ -59,7 +59,7 @@ public class MainScreenController {
 
     @FXML
     void shellSortScreen(ActionEvent event) throws IOException {
-    	Stage stage = (Stage) btnBubbleSort.getScene().getWindow();
+    	Stage stage = (Stage) btnShellSort.getScene().getWindow();
 		Parent root = FXMLLoader.load(getClass().getResource("/application/shellSort.fxml"));
 		Scene scene = new Scene(root);
 		stage.setTitle("Shell Sort");
@@ -68,7 +68,7 @@ public class MainScreenController {
 
     @FXML
     void heapSortScreen(ActionEvent event) throws IOException {
-    	Stage stage = (Stage) btnBubbleSort.getScene().getWindow();
+    	Stage stage = (Stage) btnHeapSort.getScene().getWindow();
 		Parent root = FXMLLoader.load(getClass().getResource("/application/heapSort.fxml"));
 		Scene scene = new Scene(root);
 		stage.setTitle("Heap Sort");

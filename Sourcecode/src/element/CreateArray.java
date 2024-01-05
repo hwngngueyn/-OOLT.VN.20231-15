@@ -50,7 +50,7 @@ public class CreateArray {
 	}
 	public static void main(String[] args) {
 		CreateArray crt = new CreateArray();
-		crt.createNearlySorted(10,-1);
+		//crt.createNearlySorted(10,-1);
 	}
 
 }
