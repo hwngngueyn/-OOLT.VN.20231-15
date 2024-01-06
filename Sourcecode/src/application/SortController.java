@@ -66,14 +66,14 @@ public class SortController {
     void btnConfirmPressed(ActionEvent event) {
     	try {
     	String[] arrText = textInput.getText().split(",");
-    	if (arrText.length < 16) {
+    	if (arrText.length < 21) {
     	this.arr = new Element[arrText.length];
     	for (int i = 0; i< arrText.length; i++) {
     		this.arr[i]= new Element(Integer.parseInt(arrText[i]));
     	}
     	addElements(arr);
     	} else {
-    		JOptionPane.showMessageDialog(null, "Number of elements in array cannot exceed 15");
+    		JOptionPane.showMessageDialog(null, "Number of elements in array cannot exceed 20");
     	}
 
     	} catch (NumberFormatException e) {
@@ -145,7 +145,7 @@ public class SortController {
     @FXML
     private void initialize() {
     	ObservableList<Integer> lengthList = FXCollections.observableArrayList();
-    	for (int i = 1; i<16; i++) {
+    	for (int i = 1; i< 21; i++) {
     		lengthList.add(i);
     	}
     	cbLength.setItems(lengthList);
