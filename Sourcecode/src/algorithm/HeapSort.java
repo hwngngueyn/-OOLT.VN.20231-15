@@ -45,7 +45,8 @@ public class HeapSort extends GeneralSort {
         for (int i = n - 1; i > 0; i--) {
         	colorElements(arr, CompareColor,0, i);
             swap(arr, 0, i);
-            colorElements(arr, StartColor, 0,i);
+            //colorElements(arr, StartColor, 0,i);
+            colorElements(arr, SortedColor, i);
             heapify(arr, i, 0);
         }
     }

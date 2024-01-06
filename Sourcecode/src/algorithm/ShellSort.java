@@ -21,6 +21,7 @@ public class ShellSort extends GeneralSort {
                 }
                 arr[j] = temp;
                 colorElements(arr, StartColor, j);
+                
             }
         }
     }
@@ -31,6 +32,7 @@ public class ShellSort extends GeneralSort {
             swap(arr, i, j);
         }
         colorElements(arr, StartColor, i, j);
+        
     }
 
     @Override

@@ -8,7 +8,8 @@ public class CreateArray {
 		Random rd = new Random();
 		Element[] arr = new Element[length];
 		for (int i= 0; i < length; i++) {
-			arr[i] = new Element(1+rd.nextInt(length));
+			//arr[i] = new Element(1+rd.nextInt(length));
+			arr[i] = new Element(1+rd.nextInt(1000));
 			System.out.println(arr[i].getValue());
 		}
 		return arr;
@@ -50,7 +51,6 @@ public class CreateArray {
 	}
 	public static void main(String[] args) {
 		CreateArray crt = new CreateArray();
-		//crt.createNearlySorted(10,-1);
 	}
 
 }
